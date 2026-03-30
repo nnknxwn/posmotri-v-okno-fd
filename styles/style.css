@@ -52,7 +52,8 @@ html {
 .content__list-container {
   position: relative;
   overflow-y: auto;
-  max-block-size: 298px;
+  width: 390px;
+  height: 298px;
 }
 
 .result__video-container {
@@ -64,6 +65,7 @@ html {
   inline-size: 100%;
   block-size: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .content__list {
@@ -159,6 +161,7 @@ ol {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  max-width: 192px;
 }
 
 .content__video-card-description {
@@ -295,8 +298,9 @@ ol {
 }
 
 .more-button {
-  inline-size: 100%;
+  inline-size: calc(100% - 4px);
   block-size: 34px;
+  margin: 0 2px 2px;
   margin-block-start: 30px;
 }
 
@@ -309,7 +313,7 @@ ol {
   cursor: pointer;
 }
 
-.content__card-link:hover .content__video-card-title {
+.content__card-link:hover {
   text-decoration: underline;
 }
 
